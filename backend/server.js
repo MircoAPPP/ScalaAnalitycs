@@ -9,7 +9,7 @@ const wss = new WebSocket.Server({ noServer: true });
 // Read the secret key from environment variables.
 // For production, you should set this variable in your hosting environment.
 // Example: export PLUGIN_SECRET="your-super-secret-key"
-const PLUGIN_SECRET = process.env.PLUGIN_SECRET || 'change-me-to-a-secure-secret';
+const PLUGIN_SECRET = process.env.PLUGIN_SECRET || 'tonno';
 
 // In-memory store for the latest analytics data.
 // For a more robust solution, you could use a database like Redis.
