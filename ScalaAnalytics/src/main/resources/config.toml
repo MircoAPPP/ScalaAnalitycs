@@ -1,0 +1,12 @@
+# Configuration for ScalaAnalytics
+
+# The WebSocket URL of your backend server.
+# Example: "ws://localhost:8080/ws" or for production "wss://your-domain.com/ws"
+websocket-url = "ws://localhost:8080/ws"
+
+# A secret key to authenticate the plugin with the backend.
+# Make sure this matches the 'PLUGIN_SECRET' in your backend configuration.
+secret-key = "change-me-to-a-secure-secret"
+
+# How often (in seconds) to send a full data snapshot.
+update-interval = 10

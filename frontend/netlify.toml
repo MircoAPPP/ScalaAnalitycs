@@ -1,0 +1,15 @@
+# Netlify configuration file
+# This tells Netlify how to deploy your site.
+
+[build]
+  # This is the directory that contains your static files (index.html, etc.)
+  # Since our files are in the root of the 'frontend' directory, we set it to '.'
+  # If you had a 'public' or 'dist' folder, you would specify that instead.
+  publish = "."
+
+# Optional: Redirect all non-existent paths to index.html for single-page apps.
+# Not strictly necessary for our current setup, but good practice.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

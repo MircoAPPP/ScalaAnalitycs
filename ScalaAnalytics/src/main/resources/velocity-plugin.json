@@ -1,0 +1,10 @@
+{
+  "id": "scalaanalytics",
+  "name": "ScalaAnalytics",
+  "version": "1.0.0",
+  "description": "A plugin to send server analytics to a web dashboard.",
+  "authors": [
+    "Jules"
+  ],
+  "main": "com.scala.ScalaAnalytics"
+}

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --bg-color: #0d0d0d;
+    --primary-color: #00ff00;
+    --text-color: #e0e0e0;
+    --card-bg-color: #1a1a1a;
+    --border-color: #2a2a2a;
+    --disconnected-color: #ff4d4d;
+    --connected-color: #00ff00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--card-bg-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.status-container {
+    font-weight: bold;
+}
+
+#connection-status {
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.status-disconnected {
+    background-color: var(--disconnected-color);
+    color: #fff;
+}
+
+.status-connected {
+    background-color: var(--connected-color);
+    color: var(--bg-color);
+}
+
+main {
+    padding: 2rem;
+}
+
+.main-stats {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.stat-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.stat-card p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.chart-container {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.chart-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.server-list h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.server-card {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.server-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.server-card-header h3 {
+    color: var(--primary-color);
+}
+
+.player-count {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.player-list ul {
+    list-style: none;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.player-list li {
+    padding: 0.2rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid var(--border-color);
+}

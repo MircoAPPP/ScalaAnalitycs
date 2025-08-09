@@ -1,0 +1,14 @@
+{
+  "name": "scala-analytics-backend",
+  "version": "1.0.0",
+  "description": "Backend for ScalaAnalytics",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Jules",
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.17.0"
+  }
+}
